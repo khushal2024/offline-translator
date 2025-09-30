@@ -2,7 +2,7 @@ name: offline_translator
 description: A Flutter package for offline translation without any json or arb files.
 version: 0.0.1
 homepage: https://github.com/khushal2024/offline-translator
-publish_to: https://pub.dev
+
 
 
 environment:
