@@ -2,7 +2,7 @@ name: offline_translator
 description: "A new Flutter package project."
 version: 0.0.1
 homepage: https://github.com/khushal2024/offline-translator
-publish_to: "none"
+publish_to: "https://pub.dev"
 
 environment:
   sdk: ^3.9.2
