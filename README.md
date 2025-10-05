@@ -37,39 +37,24 @@ dependencies:
 
 # usage dynamically
  
- ![Demo](assets/translated.png)
+ ![Demo](assets/text.png)
 
 
 ## 💡 Key Advantages
 
 * **Dynamic placeholders**: Easily replace text like `"Welcome {name}"`.
 * **Offline-first**: Ideal for apps with no internet connectivity.
-* **android & iOS: Works on android & iOS 16+ and all Flutter-supported platforms.
-
-
-
-## 📌 Example Usage
-
-
-// Translate dynamically with parameters
-TranslatedText("Welcome {name}", params: {"name": "Ahmed"});
-
-# default langauge at run time 
-provider.setLanguage('en'); // UI automatically updates
-
-
+* **android & iOS**: Works on android & iOS 16+ and all Flutter-supported platforms.
 
 
 ## 🏆 Why Choose Offline Translator?
 
 ✅ No network dependency
+✅ For dynamic data/text
 ✅ Multi-language support
 ✅ Fast, lightweight, and simple API
 ✅ Perfect for mobile apps requiring offline capabilities
 
-
-
-**Supported Languages:**
 
 **Supported Languages:**  
 
