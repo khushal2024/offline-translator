@@ -45,25 +45,28 @@ dependencies:
 * **Dynamic placeholders**: Easily replace text like `"Welcome {name}"`.
 * **Offline-first**: Ideal for apps with no internet connectivity.
 * **android & iOS**: Works on android & iOS 16+ and all Flutter-supported platforms.
+* **Self Storage**: It includes self contained cache for storing.
 
 
 ## 🏆 Why Choose Offline Translator?
 
-✅ No network dependency
-✅ For dynamic data/text
-✅ Multi-language support
-✅ Fast, lightweight, and simple API
-✅ Perfect for mobile apps requiring offline capabilities
-
+✅ No network dependency  
+✅ For dynamic data/text  
+✅ Multi-language support  
+✅ Fast, lightweight, and simple API  
+✅ Perfect for mobile apps requiring offline capabilities  
 
 **Supported Languages:**  
 
- English   en    🇺🇸 
- French    fr    🇫🇷 
- Spanish   es    🇪🇸 
- Urdu      ur    🇵🇰 
- Arabic    ar    🇸🇦 
- Chinese   zh    🇨🇳 
+| Language | Code | Flag |
+|----------|------|------|
+| English  | en   | 🇺🇸 |
+| French   | fr   | 🇫🇷 |
+| Spanish  | es   | 🇪🇸 |
+| Urdu     | ur   | 🇵🇰 |
+| Arabic   | ar   | 🇸🇦 |
+| Chinese  | zh   | 🇨🇳 |
+
 
 
 Note: we are adding more languages and working on performance and enhancement
