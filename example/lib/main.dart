@@ -5,7 +5,6 @@ import 'package:provider/provider.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize OfflineTranslator with default language and optional preload texts
   await OfflineTranslator.init(
     defaultLang: 'en',
     langs: ['en', 'fr', 'es', 'ur', 'ar', 'zh'],
@@ -24,9 +23,7 @@ class MyApp extends StatelessWidget {
         defaultLang: 'en',
         supportedLangs: ['en', 'fr', 'es', 'ur', 'ar', 'zh'],
       ),
-      child: const MaterialApp(
-        home: HomePage(),
-      ),
+      child: const MaterialApp(home: HomePage()),
     );
   }
 }
@@ -39,9 +36,7 @@ class HomePage extends StatelessWidget {
     final provider = Provider.of<TranslationProvider>(context);
 
     return Scaffold(
-      appBar: AppBar(
-        title: TranslatedText("Offline Translator Demo"),
-      ),
+      appBar: AppBar(title: TranslatedText("Offline Translator Demo")),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -57,10 +52,12 @@ class HomePage extends StatelessWidget {
                 DropdownButton<String>(
                   value: provider.currentLang,
                   items: provider.supportedLangs
-                      .map((lang) => DropdownMenuItem(
-                            value: lang,
-                            child: Text(lang.toUpperCase()),
-                          ))
+                      .map(
+                        (lang) => DropdownMenuItem(
+                          value: lang,
+                          child: Text(lang.toUpperCase()),
+                        ),
+                      )
                       .toList(),
                   onChanged: (value) {
                     if (value != null) provider.setLanguage(value);
@@ -73,18 +70,10 @@ class HomePage extends StatelessWidget {
             // Multiple translated texts
             const TranslatedText("Hello World"),
             const TranslatedText("Flutter is amazing"),
-            TranslatedText(
-              "Welcome {name}",
-            ),
-            TranslatedText(
-              "You have 5 new messages",
-            ),
-
-
-TranslatedText("this is what we call a flutter package"),
+            const TranslatedText("Welcome {name}"),
+            const TranslatedText("You have 5 new messages"),
+            const TranslatedText("this is what we call a flutter package"),
             const SizedBox(height: 20),
-
-            
           ],
         ),
       ),

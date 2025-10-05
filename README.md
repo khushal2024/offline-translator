@@ -2,7 +2,7 @@
 
 **A Flutter package for completely offline translation** — no internet, no external files, fully self-contained.  
 
-![Flutter](https://img.shields.io/badge/Flutter-3.0-blue) ![Dart](https://img.shields.io/badge/Dart-2.19-blue) ![Platforms](https://img.shields.io/badge/iOS-16+-orange)  
+![Flutter](https://img.shields.io/badge/Flutter-3.35.3-blue) ![Dart](https://img.shields.io/badge/Dart-3.9.2-blue) ![Platforms](https://img.shields.io/badge/iOS-16+-orange) ![Android](https://img.shields.io/badge/Android-11+-green)
 
 
 
@@ -26,41 +26,18 @@ dependencies:
 ### 2️⃣ Initialize Translator
 
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
-  await OfflineTranslator.init(
-    defaultLang: 'en',
-    langs: ['en', 'fr', 'es', 'ur', 'ar', 'zh'],
-  );
-
-  runApp(const MyApp());
-  }
+![Demo](assets/main.png)
 
 
 
 
 ### 3️⃣ Wrap App with Provider
 
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (_) => TranslationProvider(
-        defaultLang: 'en',
-        supportedLangs: ['en','fr','es','ur','ar','zh'],
-      ),
-      child: const MaterialApp(home: HomePage()),
-    );
-  }
-}
+![Demo](assets/My.png)
 
 # usage dynamically
- Translated TranslatedText("Offline Translator Package"),
-
+ 
+ ![Demo](assets/translated.png)
 
 
 ## 💡 Key Advantages

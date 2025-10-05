@@ -1,6 +1,6 @@
+// ignore_for_file: library_private_types_in_public_api
 
-
-
+// ignore: unnecessary_library_name
 library offline_translator;
 
 import 'package:flutter/material.dart';
@@ -144,8 +144,8 @@ class TranslationProvider extends ChangeNotifier {
   TranslationProvider({
     required String defaultLang,
     required List<String> supportedLangs,
-  })  : _currentLang = defaultLang,
-        _supportedLangs = supportedLangs {
+  }) : _currentLang = defaultLang,
+       _supportedLangs = supportedLangs {
     OfflineTranslator.changeLanguage(defaultLang);
   }
 
@@ -160,10 +160,12 @@ class TranslationProvider extends ChangeNotifier {
   }
 
   /// Synchronous translation
-  String translateSync(String text) => OfflineTranslator.instance.translateSync(text);
+  String translateSync(String text) =>
+      OfflineTranslator.instance.translateSync(text);
 
   /// Async translation
-  Future<String> translate(String text) => OfflineTranslator.instance.translateText(text);
+  Future<String> translate(String text) =>
+      OfflineTranslator.instance.translateText(text);
 }
 
 /// ------------------
@@ -226,6 +228,3 @@ class _TranslatedTextState extends State<TranslatedText> {
     );
   }
 }
-
-
-
